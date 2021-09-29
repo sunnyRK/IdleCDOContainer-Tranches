@@ -1,5 +1,25 @@
 # Gitcoin GR11 Bounty for Idle.finance
 
+## IDLE CDO Container: 
+Users ideally should be able to deposit eg DAI and those will get then deposited eg 50% in AA_idleDAI and 50% in AA_idleUSDC. So container will split user's amount into different different CDOs(like DAI, USDC etc.)
+
+## Check below IdleCDOContainer.sol file and other files submissions.
+
+### 1).
+IdleCDOContainer: [IdleCDOContainer.sol](https://github.com/sunnyRK/IdleCDOContainer-Tranches/blob/master/contracts/IdleCDOContainer.sol)  
+
+### 2).
+To manage the position of User CDO container will give AA or BB tranche share tokens. Using that user can withdraw their underlying tokens.  
+AATranche: [AATranche.sol](https://github.com/sunnyRK/IdleCDOContainer-Tranches/blob/master/contracts/TrancheERC20/AATranche.sol)  
+BBTranche: [BBTranche.sol](https://github.com/sunnyRK/IdleCDOContainer-Tranches/blob/master/contracts/TrancheERC20/BBTranche.sol)  
+
+### 3).
+I hvae change the IIdleCDO interface file.  
+IIdleCDO interface: [IIdleCDO.sol](https://github.com/sunnyRK/IdleCDOContainer-Tranches/blob/master/contracts/interfaces/IIdleCDO.sol)
+
+### 4). 
+Working more into this bounty :)
+
 
 # Idle Perpetual Yield Tranches
 The aim of Idle Perpetual Yield Tranches is to pool capital of users (eg DAI), deposit it into a lending provider (eg Idle Finance) and split the interest received between 2 classes of users with different risk profiles.
